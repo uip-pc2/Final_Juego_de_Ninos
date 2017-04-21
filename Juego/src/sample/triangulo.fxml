@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.triangulo">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="400.0" prefWidth="500.0">
+         <children>
+            <Label layoutX="129.0" layoutY="13.0" prefHeight="45.0" prefWidth="267.0" text="ESCOJE LA FIGURA CORRECTA" textFill="#e59f09">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="trian" fitHeight="150.0" fitWidth="200.0" layoutX="175.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Imagenes/triangulo_png_by_brisayavril-d5tha19.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="30.0" layoutY="222.0" prefHeight="19.0" prefWidth="147.0" text="Escojer entre estos:" textFill="#e59905">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="circulo1" fitHeight="91.0" fitWidth="97.0" layoutX="58.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Imagenes/2000px-Circulo-black.svg.png" />
+               </image>
+            </ImageView>
+            <RadioButton fx:id="circulo" layoutX="54.0" layoutY="332.0" mnemonicParsing="false" onAction="#btn_circulo" text="Circulo" />
+            <ImageView fx:id="triangulo1" fitHeight="91.0" fitWidth="125.0" layoutX="200.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Imagenes/Fuego_triángulo.png" />
+               </image>
+            </ImageView>
+            <RadioButton fx:id="triangulo" layoutX="200.0" layoutY="332.0" mnemonicParsing="false" onAction="#btn_triangulo" text="Triangulo" textFill="#e11212" />
+            <ImageView fx:id="rectangulo1" fitHeight="69.0" fitWidth="147.0" layoutX="325.0" layoutY="263.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Imagenes/nx4cxrwz1yp.png" />
+               </image>
+            </ImageView>
+            <RadioButton fx:id="rectangulo" layoutX="348.0" layoutY="332.0" mnemonicParsing="false" onAction="#btn_rectangulo" text="Rectangulo" textFill="#0b0bda" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>

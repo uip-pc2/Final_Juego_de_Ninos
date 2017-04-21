@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.cuadrado">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="400.0" prefWidth="500.0">
+         <children>
+            <Label layoutX="117.0" layoutY="14.0" prefHeight="45.0" prefWidth="267.0" text="ESCOJE LA FIGURA CORRECTA" textFill="#1608e8">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="cuadrado" fitHeight="138.0" fitWidth="152.0" layoutX="163.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Imagenes/Cuadrado.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="32.0" layoutY="200.0" prefHeight="19.0" prefWidth="147.0" text="Escojer entre estos:" textFill="#2203e8">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="cuadradoazul" fitHeight="109.0" fitWidth="132.0" layoutX="32.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Imagenes/cuadrado-azul.png" />
+               </image>
+            </ImageView>
+            <RadioButton fx:id="cuadradoa" layoutX="39.0" layoutY="328.0" mnemonicParsing="false" onAction="#rb_cuadrado_azul" text="cuadrado" textFill="#320ae4" />
+            <ImageView fx:id="triangulo2" fitHeight="109.0" fitWidth="129.0" layoutX="189.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Imagenes/Fuego_triángulo.png" />
+               </image>
+            </ImageView>
+            <RadioButton fx:id="triangulo" layoutX="201.0" layoutY="328.0" mnemonicParsing="false" onAction="#rb_triangulo" text="triangulo" textFill="#e10707" />
+            <ImageView fx:id="circulo2" fitHeight="109.0" fitWidth="131.0" layoutX="342.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Imagenes/2000px-Circulo-black.svg.png" />
+               </image>
+            </ImageView>
+            <RadioButton fx:id="circulo" layoutX="364.0" layoutY="328.0" mnemonicParsing="false" onAction="#rb_circulo" text="circulo">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </Pane>
+   </children>
+</GridPane>

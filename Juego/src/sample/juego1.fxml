@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Principaljuego">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane layoutX="2.0" layoutY="3.0" prefHeight="395.0" prefWidth="426.0">
+         <children>
+            <ImageView fx:id="cuadrado" fitHeight="131.0" fitWidth="178.0" layoutX="144.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Imagenes/Cuadrado.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="134.0" layoutY="23.0" prefHeight="34.0" prefWidth="159.0" text="Escoja la forma correcta. " textFill="#bf2626" />
+            <ImageView fx:id="cuadrado_azul" fitHeight="86.0" fitWidth="125.0" layoutX="35.0" layoutY="214.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Imagenes/cuadrado-azul.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="26.0" layoutY="189.0" text="Escojer aquí:" textFill="#e80843" />
+            <RadioButton layoutX="38.0" layoutY="300.0" mnemonicParsing="false" onAction="#rb_cuadrado" text="Cuadrado" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>

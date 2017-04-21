@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.finall">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="400.0" prefWidth="500.0">
+         <children>
+            <ImageView fx:id="completado" fitHeight="255.0" fitWidth="420.0" layoutX="33.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Imagenes/SELLO-COMPLETADO-300x140.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="salir4" layoutX="351.0" layoutY="298.0" mnemonicParsing="false" onAction="#btn_salir4" prefHeight="27.0" prefWidth="70.0" text="SALIR" textFill="#1bc618" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>
